@@ -32,18 +32,10 @@ const middlewares = jsonServer.defaults();
 
 server.use(middlewares);
 // Add this before server.use(router)
-// server.use(
-//   jsonServer.rewriter({
-//     "/api/*": "/$1",
-//     "/blog/:resource/:id/show": "/:resource/:id",
-//   })
-// );
 server.use(
-  cors({
-    origin: true,
-    credentials: true,
-    preflightContinue: false,
-    methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+  jsonServer.rewriter({
+    "/api/*": "/$1",
+    "/blog/:resource/:id/show": "/:resource/:id",
   })
 );
 server.options("*", cors());
