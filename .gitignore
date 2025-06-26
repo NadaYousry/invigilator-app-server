@@ -1,38 +1,4 @@
-# Node modules
+# Dependency directories
 node_modules/
 
-# Logs
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# Build outputs
-dist/
-build/
-
-# Local env files
-.env
-.env.local
-.env.*.local
-
-# Vite cache
-.vite/
-
-# System files
-.DS_Store
-Thumbs.db
-
-# VSCode settings
-.vscode/
-
-# Mac system files
-*.DS_Store
-
-# Optional npm package lock
-package-lock.json
-
-# Yarn lock (optional, keep only if you use it)
-# yarn.lock
-
-# Render-specific (optional)
-render.yaml
+.idea
