@@ -34,8 +34,4 @@ server.use(
 
 server.use(router);
 
-server.listen(3000, () => {
-  console.log("JSON Server is running");
-});
-
 module.exports = server;
