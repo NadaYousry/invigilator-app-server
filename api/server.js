@@ -38,7 +38,6 @@ server.use(
     "/blog/:resource/:id/show": "/:resource/:id",
   })
 );
-server.options("*", cors());
 server.use(router);
 server.listen(3001, () => {
   console.log("JSON Server is running");
